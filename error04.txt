@@ -1,0 +1,17 @@
+>>> %Run madeirao.py
+start
+Traceback (most recent call last):
+  File "/home/pi/madeirao.py", line 22, in <module>
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+  File "/home/pi/.local/lib/python3.7/site-packages/webdriver_manager/chrome.py", line 39, in install
+    driver_path = self._get_driver_path(self.driver)
+  File "/home/pi/.local/lib/python3.7/site-packages/webdriver_manager/core/manager.py", line 30, in _get_driver_path
+    file = self._download_manager.download_file(driver.get_url())
+  File "/home/pi/.local/lib/python3.7/site-packages/webdriver_manager/core/download_manager.py", line 28, in download_file
+    response = self._http_client.get(url)
+  File "/home/pi/.local/lib/python3.7/site-packages/webdriver_manager/core/http.py", line 33, in get
+    self.validate_response(resp)
+  File "/home/pi/.local/lib/python3.7/site-packages/webdriver_manager/core/http.py", line 16, in validate_response
+    raise ValueError(f"There is no such driver by url {resp.url}")
+ValueError: There is no such driver by url https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux32.zip
+>>> 

@@ -1,0 +1,15 @@
+>>> %Run madeirao.py
+start
+Traceback (most recent call last):
+  File "/home/pi/madeirao.py", line 21, in <module>
+    driver = webdriver.Chrome(options=options, executable_path='/usr/local/bin/chromedriver')
+  File "/usr/local/lib/python3.7/dist-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/usr/local/lib/python3.7/dist-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/usr/lib/python3.7/subprocess.py", line 775, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.7/subprocess.py", line 1522, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+OSError: [Errno 8] Exec format error: '/usr/local/bin/chromedriver'
+>>> 
